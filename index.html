@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!-- Give the page a title - make sure it is descriptive! -->
+        <title>Good ol' Checkers</title>
+
+        <!-- Load utilities and functions -->
+        <script src="common/utilities.js"></script>
+        <script src="common/gl-matrix.js"></script>
+
+        <!-- Load the code for this example -->
+        <script src="checkers.js"></script>
+
+        <!-- Style the canvas -->
+        <style type="text/css">
+            canvas {
+                border: 5px solid black;
+                width: 500px; height: 500px;
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                margin: auto;
+            }
+            input{
+
+                    position: absolute;
+                    right: 30%;
+                    bottom: 20.5%;
+                    width:  10%;
+                    height: 10%;
+                    z-index: 0;
+
+            }
+
+        </style>
+    </head>
+    <body bgcolor="f5b0dd" >
+        <!-- Define the canvas to use for the WebGL example -->
+        <canvas id="webgl-canvas" width="500" height="500">
+            Your browser doesn't support the HTML5 canvas element.
+        </canvas>
+    </body>
+    <h1 id="gameStatus" style="color:rgb(8, 39, 239)" 
+text-align="center">TURN:</h1>
+    <h1 id="turnID" style="color:WHITE">WHITE</h1>
+    <button id="newGame">New Game</button>
+</html>
+
